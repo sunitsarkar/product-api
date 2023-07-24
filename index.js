@@ -7,7 +7,7 @@ const bodyparser=require('body-parser');
 const password=process.env.PASSWORD;
 const router=require('./router')
 
-
+//db connection
 const dbUrl=`mongodb+srv://sunitsarkar:${password}@cluster0.gxschpx.mongodb.net/?retryWrites=true&w=majority`;
 mongoose.set('strictQuery'  ,false);
 mongoose.connect(dbUrl,{
